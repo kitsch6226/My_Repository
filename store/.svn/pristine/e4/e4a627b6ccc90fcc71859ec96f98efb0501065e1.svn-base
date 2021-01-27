@@ -1,0 +1,175 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.indexcenterdiv {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 128px 0px;
+	display: table;
+}
+.indexcenterdiv a{
+	color: lightgray;
+	text-decoration:none;
+}
+.indexcenterdiv li:hover a{
+	color:white;
+}
+
+.sortbtndiv {
+	margin-left: 20px;
+	float: left;
+}
+
+.sortbtn {
+	position: relative;
+	width: 100%;
+	height: 3.2em;
+	color: lightgray;
+	padding: 10px 20px;
+	border: 1px solid #ffea00;
+	border-radius: 6px;
+	background: transparent;
+	outline: none;
+}
+
+.sortlist {
+	padding: 10px;
+	width: 5%;
+	border-radius: 6px;
+	background: #474747;
+	display: none;
+	position: absolute;
+	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.7);
+}
+
+.sortlist li {
+	color: gray;
+	padding: 10px 0px;
+	text-align: center;
+	list-style: none;
+}
+
+.sortbtndiv:hover .sortlist {
+	display: block;
+}
+
+.sortbtn:hover {
+	background: #ffea00;
+	color:black;
+}
+
+.orderbtn {
+	color:lightgray;
+	background:transparent;
+	border-radius:6px;
+	border:1px solid #ffea00;
+	padding: 10px 20px;
+	cursor:pointer;
+}
+.orderbtn:hover {
+	background:#ffea00;
+	color:black;
+}
+.wishlisttable{
+	border:0px solid black;
+	border-spacing:0px;
+	text-align:center;
+}
+.wishlisttable b{
+	color:darkgray;
+}
+.wishlisttable a:hover{
+	color:white;
+}
+.gametitlea{
+	font-weight:bold;
+	font-size:1.5em;
+}
+.gametitlea:hover{
+	color:white;
+}
+</style>
+</head>
+<body style="background-color: #1f1f1f;">
+	<div class="indexcenterdiv">
+		<div style="width: 100%; display:table;">
+			<p style="width: 120px; height:120px;float: left">
+				<img src="/store/image/profile/nuru.jpg"style="border: 1px solid black; width: 100%" ondragstart="return false;" />
+			</p>
+			<div style="margin-top: 78px; margin-left: 20px; display: table; float:left">
+				<h2	style="position: relative; padding-top: 12px; float: left; color: lightgray;">윤느루
+					님의 찜 목록</h2>
+				<div class="sortbtndiv">
+					<input class="sortbtn" type="button" value="정렬 기준 : 최근" />
+					<div class="sortlist">
+						<ul>
+							<li><a href="#">최근</a></li>
+							<li><a href="#">평가</a></li>
+							<li><a href="#">가격</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p style="float: right; margin-top: 80px; margin-left: 20px;">
+				<button class="orderbtn">선택삭제</button>
+				<button class="orderbtn">선택주문</button>
+			</p>
+		</div>
+		<div style="background:#525252; border-radius:6px; overflow:hidden;margin-top:20px;">
+			<table class="wishlisttable">
+				<tr>
+					<td rowspan="5" style="width:5%; border-right:2px solid black;">
+						<input type="checkbox" value="1"/>
+					</td>
+					<td rowspan="5" style="width:25%;padding:20px; border-right:2px solid black;">
+						<img src="/store/image/keyart/Cyber Punk_Key_Art_Portrait_976x549.png" style="width:100%; border:1px solid black;"/>
+					</td>
+				</tr>
+				<tr style="">
+					<td colspan="2" style="padding-left:20px; text-align:left; width:60%; border-bottom:2px solid black;">
+						<a class="gametitlea" href="/store/main/game/GameDetail.jsp">
+							사이버 펑크2077
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-left:20px; text-align:left; width:30%;border-bottom:2px solid black;border-right:2px solid black;">
+						<b>게임 평가 : </b><a href="#">꼭 해봐야함 (총 1024개의 평가)</a>
+					</td>
+					<td style="padding-left:20px; text-align:left; width:30%;border-bottom:2px solid black;">
+						<b style="color:#ffea00; font-size:1em; padding:10px; background:#1f1f1f; border-radius:8px;">\60,000 원</b>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-left:20px; text-align:left; width:30%;border-bottom:2px solid black;border-right:2px solid black;">
+						<b>운영 체제 : </b><a>Window,Mac</a>
+					</td>
+					<td style="padding-left:20px; text-align:left; width:30%;border-bottom:2px solid black;">
+						<b style="color:#ffea00; font-size:1em; padding:10px; background:#1f1f1f; border-radius:8px;">40% 할인율</b>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-left:20px; text-align:left; width:30%;border-right:2px solid black;">
+						<b>태그 : </b><a href="#">#태그1</a>, <a href="#">#태그2</a>, <a href="#">#태그3</a>, <a href="#">#태그4</a>
+					</td>
+					<td style="padding-left:20px; text-align:left; width:30%;">
+						<b>찜 한 날짜 : 2020-11-19</b>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+</body>
+</html>

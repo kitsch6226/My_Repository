@@ -1,0 +1,125 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+.indexcenterdiv {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 128px 0px;
+	display: table;
+}
+.indexcenterdiv h1{
+	float:left;
+}
+.indexcenterdiv b, .indexcenterdiv h1{
+	color:lightgray;
+
+}
+.indexcenterdiv p{
+	color:gray;
+}
+.indexcenterdiv a{
+	color: #c2c2c2;
+	text-decoration:none;
+}
+.indexcenterdiv button:hover{
+	background:#ffea00;
+	border:none;
+}
+.indexcenterdiv li:hover a{
+	color:white;
+}
+.sortbtndiv{
+	margin-left:20px;
+	float:left;
+}
+.sortlist{
+	float:left;
+	padding:10px;
+	width:6%;
+	border-radius:6px;
+	background:#474747;
+	display:none;
+	position:absolute;
+	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.7);
+}
+.sortlist li{
+	color:gray;
+	padding:10px 0px;
+	text-align:center;
+	list-style:none;
+}
+.sortbtn{
+	width:100%;
+	height:3.2em;
+	color:lightgray;
+	padding:10px 20px;
+	border:1px solid #ffea00;
+	border-radius:6px;
+	background:transparent;
+	outline:none;
+}
+.sortbtndiv:hover .sortlist{
+	display:block;
+}
+.sortbtn:hover{
+	background:red;
+}
+
+.librarycenterdiv{
+	width:100%;
+	display:table;
+	box-sizing:border-box;
+}
+.librarygamediv{
+	margin:0px 15px;
+	margin-bottom:20px;
+	width:18%;
+	float:left;
+}
+.librarygamediv button{
+	padding:10px 20px;
+	border:none;
+	width:100%;
+	margin-top:10px;
+	cursor:pointer;
+}
+</style>
+</head>
+<body style="background-color: #1f1f1f;">
+	<div class="indexcenterdiv">
+		<div style="display:table; width:100%; padding-bottom:20px">
+			<h1>라이브러리</h1>
+			<div class="sortbtndiv">
+				<input class="sortbtn" type="button" value="정렬 기준 : 설치여부"/>
+				<div class="sortlist">
+					<ul>
+						<li><a href="#">최근</a></li>
+						<li><a href="#">평가</a></li>
+						<li><a href="#">설치여부</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="librarycenterdiv">
+			<div class="librarygamediv">
+				<img src="/store/image/portrait/CP Portrait.jpg" style="cursor:pointer; width:100%" onclick="location.href='http://localhost:8080/store/main/MainPage.jsp?kind=gamedetail'"/>
+				<div style="padding-top:10px;">
+					<b>사이버 펑크 2077</b>
+					<p style="margin:10px 0;">게임 태그 : <a href="#">#태그1</a>, <a href="#">#태그2</a>, <a href="#">#태그3</a>, <a href="#">#태그4</a></p>
+					<button>설치하기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

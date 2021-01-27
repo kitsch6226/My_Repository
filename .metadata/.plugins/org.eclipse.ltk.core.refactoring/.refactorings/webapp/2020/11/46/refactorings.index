@@ -1,0 +1,35 @@
+1604881767695	Rename resource 'framwork'
+1604887461847	Move compilation unit
+1604888220172	Delete element
+1604890987590	Rename type 'ListController'
+1604891331631	Delete element
+1604894433984	Copy files
+1604899191487	Move 'MemberList.jsp' to 'member'
+1604899198931	Move 2 resources to 'member'
+1604899354744	Move 3 resources to 'auth'
+1604899370989	Move 3 resources to 'member'
+1604905692207	Rename type 'AddController'
+1604995405334	Rename resource 'managerPage.jsp'
+1604995413080	Move 'productUploadPage.jsp' to 'product'
+1605019570605	Move 'productUploadPage.jsp' to 'market'
+1605019611018	Move 'productUploadPage.jsp' to 'product'
+1605071620425	Copy file
+1605071651361	Rename resource 'headerPage.jsp'
+1605075453634	Move 'loginPage.jsp' to 'auth'
+1605075467697	Move 'joinPage.jsp' to 'member'
+1605075513394	Move 'boardPage.jsp' to 'board'
+1605075519671	Move 3 resources to 'board'
+1605075523595	Move 3 resources to 'board'
+1605075550904	Move 2 resources to 'product'
+1605075554930	Move 'practice.html' to 'market'
+1605075560717	Move 'postPage.jsp' to 'board'
+1605075587879	Move 2 resources to 'order'
+1605075602179	Move 'cartPage.jsp' to 'order'
+1605075763026	Move 'Header.jsp' to 'auth'
+1605075977300	Move 'Header.jsp' to 'member'
+1605077638983	Move 'headerPage.jsp' to 'auth'
+1605083887933	Move 'MemberList.jsp' to 'member'
+1605083892838	Rename resource 'MemberList.jsp'
+1605083969756	Move 'MemberList.jsp' to 'member'
+1605151559361	Rename resource 'qnaListPage.jsp'
+1605151581560	Copy file

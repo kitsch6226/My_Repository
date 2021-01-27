@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:41 +0900] "GET /webapp/market/listQna.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:41 +0900] "GET /webapp/market/login.do HTTP/1.1" 200 3360
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "POST /webapp/market/login.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/listProduct.do HTTP/1.1" 200 30103
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft004_detail.jpg HTTP/1.1" 200 1601169
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft002_detail.jpg HTTP/1.1" 200 879174
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft008_detail.jpg HTTP/1.1" 200 1270058
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft009_detail.jpg HTTP/1.1" 200 983305
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft008.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft001_detail.jpg HTTP/1.1" 200 1611795
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft007_detail.jpg HTTP/1.1" 200 1068407
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft006_detail.jpg HTTP/1.1" 200 1310791
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft003_detail.jpg HTTP/1.1" 200 286191
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:46 +0900] "GET /webapp/market/img/product/ft005_detail.jpg HTTP/1.1" 200 1574802
+0:0:0:0:0:0:0:1 - - [15/Nov/2020:02:17:49 +0900] "GET /webapp/market/listQna.do HTTP/1.1" 200 6402

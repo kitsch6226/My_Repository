@@ -1,0 +1,112 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+.sortbtndiv button{
+	margin-right:20px;
+	padding:10px 20px;
+	color: lightgray;
+	border:1px solid #ffea00;
+	border-radius:6px;
+	background-color:#1f1f1f;
+	cursor:pointer;
+	outline:none;
+}
+.communitysortbtn:hover{
+	background:#ffea00;
+	color: black;
+}
+.customerreview{
+	padding:0;
+	overflow:hidden;
+	padding:20px;
+	margin-top:20px;
+	border-radius:6px;
+	overflow:hidden;
+	border:none;
+	background:#474747;
+	color:lightgray;
+	display:block;
+}
+.customerreview div, customerreview b{
+	float:left;
+}
+.customerreview input{
+	width:2em;
+	height:2em;
+}
+.customerreviewrightdiv button{
+	width:3em;
+	padding:4px;
+	background:#474747;
+	border:2px solid darkgray;
+	cursor:pointer;
+	border-radius:6px;
+}
+</style>
+</head>
+<body style="background-color: #1f1f1f;">
+		<div class="sortbtndiv" style="display:table; margin-top:20px;">
+			<button  class="communitysortbtn" type="button" onclick="location.href='http://localhost:8080/store/main/MainPage.jsp?kind=community&sort=artwork'">
+				아트워크
+			</button>
+			<button class="communitysortbtn" type="button" onclick="location.href='http://localhost:8080/store/main/MainPage.jsp?kind=community&sort=discussion'">
+				토론
+			</button>
+			<button type="button" onclick="location.href='http://localhost:8080/store/main/MainPage.jsp?kind=community&sort=review'"style="border:1px solid #474747; cursor:default"disabled>
+				리뷰
+			</button>
+		</div>
+		<div class="customerreview">
+			<div class="customerreviewleftdiv" style=" width:30%;float:left;">
+				<div style="width:420px; padding-right:20px;">
+					<img src="/store/image/keyart/Cyber Punk_Key_Art_Portrait_976x549.png" style="width:100%;cursor:pointer" onclick="location.href='../main/MainPage.jsp?kind=gamedetail'"/>
+				</div>
+				<div style="margin-top:20px;">
+					<img src="/store/image/profile/nuru.jpg" style="box-sizing:border-box; width:100px; height:100px; border:1px solid black; float:left" ondragstart="return false;"/>
+					<div style="margin-left:20px;">
+						<h2>윤느루</h2>
+						<p style="margin-top:20px;">보유 게임 : 1024개</p>
+					</div>
+				</div>
+			</div>
+			<div class="customerreviewrightdiv" style="width:70%; background:#525252">
+				<div style="padding:20px;">
+						<p style="background:#3f3f3f; padding:10px;">
+							<b>
+								사이버 펑크 2077
+							</b>
+						</p>
+					<div style="margin-top:10px;">
+						<img src="/store/image/icon/rate_good.png" style="float:left;"/>
+						<b style="float:left; font-size:2em; margin-top:10px;">&nbsp;추천 합니다.</b>
+					</div>
+					<div style="width:100%; margin:20px 0;">
+						<hr>
+					</div>
+					<div style="float:left;">
+						<p>"갓겜 스토리 브금 모든게완벽 난이도는 다크소울이랑 블러드본보다 어려웠음 암튼 갓겜 스팀에 후기처음남김 암튼 갓겜
+						 - 초보자는 공략보는거 추천함 - 어려운건 맞는데 죽다보면 컨트롤이 강해짐 진짜 이게임하고 다른게임 실력도 늘음. ..."
+						 </p>
+					</div>
+					<div style="width:100%;  margin:20px 0;">
+						<hr>
+					</div>
+					<div style="float:left;">
+						<button><img src="/store/image/icon/rate_good.png" style="background:transparent;width:100%"/></button>
+						<button style="margin-left:20px;"><img src="/store/image/icon/rate_bad.png" style="background:transparent; width:100%"/></button>
+						<b style="margin-left:20px;">120명이 좋아요를 눌렀어요.</b>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

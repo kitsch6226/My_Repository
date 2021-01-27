@@ -1,0 +1,170 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.indexcenterdiv {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 128px 0px;
+	display: table;
+}
+
+.orderinfodiv {
+	border-radius: 6px;
+	background: #474747;
+	overflow: hidden;
+}
+.ordergamininfotable{
+	text-align: center;
+	color: lightgray;
+	border-collapse:collapse;
+}
+.ordergamininfotable td{
+	background:#383838;
+}
+.ordergamininfotable th{
+	background:#626262;
+	padding:10px 0;
+}
+.ordergamininfotable button{
+	 float:left;
+	 padding:5px 10px;
+	 background:#808080;
+	 border:1px solid darkgray;
+	 border-radius:6px;
+}
+.creditinfodiv{
+	margin:20px 0;
+	float:right;
+	background:#626262;
+	width:50%;
+	padding:30px;
+	border-radius:6px;
+	box-sizing:border-box;
+}
+.creditinfotable{
+	margin-top:20px;
+	width:100%;
+}
+.creditinfotable th{
+	color: lightgray;
+	text-align:left;
+	width:20%;
+}
+.creditinfotable tr td{
+	padding:10px 0;
+}
+.creditinfotable input{
+	border-radius:6px;
+	border: 1px solid black;
+	outline:none;
+	height:3em; 
+	margin-left:20px;
+	float:left;
+}
+.creditinfotable button{
+	margin-top:20px;
+	border-radius:6px;
+	border:1px solid black;
+	cursor:pointer;
+}
+.creditinfotable button:hover{
+	background:#ffdd00;
+}
+
+
+
+</style>
+</head>
+<body style="background-color: #1f1f1f;">
+	<div class="indexcenterdiv">
+		<div class="orderinfodiv">
+			<div style="padding:20px">
+				<h2 style="color:#f2f2f2;">결제 정보</h2>
+			</div>
+			<table class="ordergamininfotable" style="width:100%">
+				<tr>
+					<th>선택</th>
+					<th colspan="2">게임 정보</th>
+					<th>운영 체제</th>
+					<th>게임 가격</th>
+				</tr>
+				<tr>
+					<td style="width:5%; padding:10px; padding-top:12px;">
+						<input type="checkbox" value=""/>
+					</td>
+					<td style="width:10%; padding:10px; padding-top:12px;">
+						<img src="/store/image/keyart/Cyber Punk_Key_Art_Portrait_976x549.png" style="width: 100%;cursor:pointer" onclick="location.href='#'"/>
+					</td>
+					<td>
+						<b>사이버 펑크2077</b>
+					</td>
+					<td>
+						<b>WINDOW, MAC</b>
+					</td>
+					<td>
+						<b>\60,000원</b>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="100%">
+						<hr style="border:1px solid #626262">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="100%" style="padding:10px 20px; background:#626262;">
+						<button>전체 선택</button>
+						<button style="margin-left:20px;">삭제 하기</button>
+						<b style="float:right; font-size:1.2em;margin-top:4px;">결제 금액 : \ 60,000원</b>
+					</td>
+				</tr>
+			</table>
+			<div class="creditinfodiv">
+				<h2 style="color:lightgray">구매 정보를 입력해 주세요.</h2>
+				<table class="creditinfotable">
+					<tr>
+						<th>카드 번호</th>
+						<td>
+							<input type="number" placeholder=" Credit Number" style="width:70%;"/>
+						</td>
+					</tr>
+					<tr>
+						<th>유효 기간</th>
+						<td>
+							<input type="number" placeholder=" MM" style="width:20%"/>
+							<input type="number" placeholder=" YY" style="width:20%;"/>
+						</td>
+					</tr>
+					<tr>
+						<th>생년 월일</th>
+						<td>
+							<input type="number" placeholder=" YYMMDD" style="width:43.5%;"/>
+						</td>
+					</tr>
+					<tr>
+						<th>비밀 번호<br>앞 2자리</th>
+						<td>
+							<input type="password" placeholder=" Two Digit" style="width:20%;"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="100%">
+							<button type="submit" style="width:100%; height:4em;">결제 하기</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

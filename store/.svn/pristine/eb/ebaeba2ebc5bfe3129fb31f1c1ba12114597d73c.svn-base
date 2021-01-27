@@ -1,0 +1,133 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.indexcenterdiv {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 128px 0px;
+	display: table;
+}
+.sortbtndiv button{
+	margin-right:20px;
+	padding:10px 20px;
+	color: lightgray;
+	border:1px solid #ffea00;
+	border-radius:6px;
+	background-color:#1f1f1f;
+	cursor:pointer;
+	outline:none;
+}
+.sortbtndiv button:hover{
+	background:#ffea00;
+	color: black;
+}
+.communitydiscussionboard{
+	border-radius:6px; overflow:hidden; 
+	margin-top:20px;
+	text-align:center;
+	width:100%;
+	border: 1ps solid black;
+	border-collapse:collapse;
+	border-spacing:0px solid black;
+}
+.communitydiscussionboard th{
+	padding:2px 0;
+	background:lightgray;
+	
+}
+.communitydiscussionboard td{
+	background:gray;
+}
+.communitydiscussionboard td div{
+	padding:4px 0;
+	margin:0 auto;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+.communitydiscussionboard a{
+	text-decoration:none;
+}
+.communitydiscussionboard a:link{
+	color:black;
+}
+.communitydiscussionboard a:visited{
+	color:black;
+}
+.communitydiscussionboard a:hover{
+	color:lightgray;
+}
+</style>
+</head>
+<body style="background-color: #1f1f1f;">
+	<div class="indexcenterdiv">
+		<h1 style="color:lightgray;">커뮤니티 : 토론</h1>
+		<div class="sortbtndiv" style="display:table; margin-top:20px;">
+			<button type="button">아트워크</button>
+			<button type="button">토론</button>
+			<button type="button">리뷰</button>
+		</div>
+		<div style="box-sizing:border-box;">
+			<table class="communitydiscussionboard">
+				<tr>
+					<th style="width:15%">타이틀</th>
+					<th style="width:5%">작성자</th>
+					<th style="width:50%">제목</th>
+					<th style="width:10%">추천</th>
+					<th style="width:10%">조회수</th>
+					<th style="width:10%">시간</th>
+				</tr>
+				<tr>
+					<td>
+						<div style="width:80%">
+							라스트 오브 어스
+						</div>
+					</td>
+					<td>
+						<div style="width:100%">
+							<a href="#">윤느루</a>
+						</div>
+					</td>
+					<td>
+						<div style="width:80%;">
+							<a href="#">이게 겜이냐?ㅇㄹㅇ레;매너래먀ㅓㄴ애ㅔ러ㅑㅁ냐ㅐ;야 [32]</a>
+						</div>
+					</td>
+					<td>
+						<div style="width:50%">
+							32
+						</div>
+					</td>
+					<td>
+						<div style="width:50%">
+							1002
+						</div>
+					</td>
+					<td>
+						<div style="width:80%">
+							2020-11-20
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="100%">
+						<hr style="border:1px solid darkgray;">
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

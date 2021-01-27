@@ -1,0 +1,131 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.indexcenterdiv {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 128px 0px;
+	display: table;
+	color:lightgray;
+	box-sizing:border-box;
+}
+.sortbtndiv button{
+	margin-right:20px;
+	padding:10px 20px;
+	color: lightgray;
+	border:1px solid #ffea00;
+	border-radius:6px;
+	background-color:#1f1f1f;
+	cursor:pointer;
+	outline:none;
+}
+.sortbtndiv button:hover{
+	background:#ffea00;
+	color: black;
+}
+.artworkdiv{
+	background:#474747;
+	width:24%;
+	margin-top:20px;
+	margin-right:10px;
+	border-radius:6px;
+}
+.artworkcontentdiv{
+	 position:relative;
+	 overflow:hidden;
+	 width:340px;
+	 height:200px;
+	 margin:0px auto;
+}
+.artworkcontentdiv img{
+	width:100%;
+	cursor:pointer;
+	transition:0.3s;
+}
+.artworkcontentdiv img:hover{
+  opacity: 0.3;
+}
+.overlay {
+  cursor:pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.artworkcontentdiv:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.artworkratebtn{
+	width:3em;
+	padding:4px;
+	background:#474747;
+	border:2px solid darkgray;
+	cursor:pointer;
+	border-radius:6px;
+	margin-left:20px;
+	float:left;
+}
+.artworkdiv{
+	float:left;
+}
+</style>
+<script type="text/javascript">
+function newframe(image){
+	window.open('http://192.168.0.200:8080/store/image/artwork/'+image);
+} 
+</script>
+</head>
+<body style="background-color: #1f1f1f;">
+	<div class="indexcenterdiv">
+		<h1>커뮤니티 : 아트워크</h1>
+		<div class="sortbtndiv" style="display:table; margin-top:20px;">
+			<button type="button">아트워크</button>
+			<button type="button">토론</button>
+			<button type="button">리뷰</button>
+		</div>
+		<div class="artworkdiv">
+			<div  class="artworkcontentdiv">
+				<img src="/store/image/artwork/1605360211_20201114142114_1.jpg" style="width:100%">
+				<div class="overlay" onclick="newframe('1605360211_20201114142114_1.jpg')">
+				   <div class="text">확대 하기</div>
+				</div>
+			</div>
+			<div style="padding:10px 0; display:table;">
+				<button class="artworkratebtn" style="margin-left:10px;"><img src="/store/image/icon/rate_good.png" style="background:transparent;width:100%"/></button>
+				<button class="artworkratebtn" style="margin-left:20px;"><img src="/store/image/icon/rate_bad.png" style="background:transparent; width:100%"/></button>
+				<p style="float:left; margin-left:10px; margin-top:10px;"><b>130개의 추천</b></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

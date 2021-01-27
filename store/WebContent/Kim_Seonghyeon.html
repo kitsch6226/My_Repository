@@ -1,0 +1,153 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function rand(){
+	 var result = Math.floor(Math.random() * 20)+1
+	document.frm.Q2.value = result;
+}
+function sorrt(){
+var number=[1,15,8,69,45,23,37,19]
+alert(number.sort(function (a,b){ return a-b; }));
+
+}
+function dandn(){
+	var n = document.frm.dannumb.value;
+	if(n==0){
+		alert("원하는 단을 입력해주세요..");
+		return;
+	}
+		document.write("----------"+n+"단-----------"+"<br>");
+		for(var i=1; i<=9; i++){
+			document.write(n+"*"+i+"="+n*i+"<br>");
+		}
+	
+}
+function change04(){
+	var target = document.getElementById("d04");
+	target.style.background="red";
+	
+}
+
+function changeBold(){
+	var target2 = document.getElementById("d05");
+	target2.style.fontWeight="bold";
+	
+}
+
+function unCheck(){
+	var chkbox = document.getElementsByName("chk");
+	for(var i=0; i<chkbox.length;i++){
+		if(chkbox[i].checked){
+			chkbox[i].checked=false;
+		}
+	}
+	
+}
+function changeText(){
+	var input = document.getElementById("readText");
+	input.style.color="red";
+	input.readOnly=true;
+}
+function disBtn(){
+	var Btn = document.getElementById("thisBtn");
+	Btn.disabled = true;
+}
+</script>
+<style type="text/css">
+div{
+padding:10px;
+background:#c2c2c2;
+display:table;
+border-radius:6px;
+}
+.d{
+background:yellow;
+}
+</style>
+</head>
+<body>
+<form name="frm">
+<h2>문제 1</h2>
+원하는 사이트 선택
+<div>
+<input type="radio" value="네이버" onclick="window.open('http://www.naver.com')"/>네이버<br>
+<input type="radio" value="다음" onclick="window.open('http://www.daum.net')"/>다음<br>
+<input type="radio" value="유튜브" onclick="window.open('http://www.youtube.com')"/>유튜브<br>
+</div>
+
+<h2>문제 2</h2>
+1~20숫자 랜덤 생성
+<div>
+출력:<input type="text" name="Q2" value="1-20랜덤생성"/><input type="button" value="생성" onclick="rand()"/>
+</div>
+
+<h2>문제 3</h2>
+이동할 페이지를 선택하세요
+<div>
+<select name="jump" onchange="location.href=this.value">
+<option>선택</option>
+<option value="http://www.naver.com">네이버</option>
+<option value="http://www.daum.net">다음</option>
+</select>
+</div>
+
+<h2>문제 4</h2>
+보기의 숫자를 정렬 해 주세요.
+<div>
+<p>*숫자:1,15,8,69,45,23,37,19</p>
+<p>*정렬:</p>
+<input type="button" value="숫자정렬" onclick="sorrt()"/>
+</div>
+
+<h2>문제 5</h2>
+원하는 구구단을 입력하고 결과 출력
+<div>
+<input type="text" name="dannumb"/><input type="button" value="구구단출력" onclick="dandn()"/>
+</div>
+
+<h2>문제 6</h2>
+버튼은 disabled시키기
+<div>
+<input type="button" value="아래 버튼 disabled 시키기" onclick="disBtn()"/><br><br>
+<input type="button" value="난 버튼이야" id="thisBtn" onclick="sorrt()"/>
+</div>
+
+<h2>문제 7</h2>
+두 번째 타겟04의 배경색 변경
+<input type="button" value="타겟04" onclick="change04()"/>
+<div style="width:200px; height:100px;">
+	<div class="d">target.04      </div>
+	<div class="d" id="d04">target.04        </div>
+	<div class="d">target.04      </div>
+	<div class="d">target.04      </div>
+</div>
+
+<h2>문제 8</h2>
+bold라고 적힌 엘리먼트의 bold효과 적용
+<input type="button" value="타겟bold" onclick="changeBold()"/>
+<div style="width:200px; height:100px;">
+	<div class="d"  id="d05">bold</div>
+	<div class="d">blink</div>
+	<div class="d">strike</div>
+</div>
+<h2>문제 9</h2>
+읽기만 가능하게 하고 폰트색깔 red
+<div>
+<input type="button" value="타겟Red" onclick="changeText()"/><br>
+<input type="text" value="읽기만 가능하게 하시오" id="readText" />
+</div>
+
+<h2>문제 10</h2>
+모든 체크박스 해제
+<div>
+<input type="button" value="언체크" onclick="unCheck()"/><br>
+<input type="checkbox" name="chk" value="uncheck!" checked/>uncheck!<br>
+<input type="checkbox" name="chk" value="uncheck!" checked/>uncheck!<br>
+<input type="checkbox" name="chk" value="uncheck!" checked/>uncheck!<br>
+<input type="checkbox" name="chk" value="uncheck!" checked/>uncheck!<br>
+</div>
+</form>
+</body>
+</html>

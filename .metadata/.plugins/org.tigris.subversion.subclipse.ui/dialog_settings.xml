@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="CommitDialog.location.x" value="478"/>
+	<item key="CommitDialog.location.y" value="215"/>
+	<item key="CommitDialog.size.x" value="1174"/>
+	<item key="CommitDialog.size.y" value="440"/>
+	<item key="CommitDialog.weights.0" value="500"/>
+	<item key="CommitDialog.weights.1" value="500"/>
+	<item key="HistoryDialog.location.x" value="760"/>
+	<item key="HistoryDialog.location.y" value="133"/>
+	<item key="HistoryDialog.size.x" value="1024"/>
+	<item key="HistoryDialog.size.y" value="670"/>
+	<item key="HistoryDialog.weights.0" value="200"/>
+	<item key="HistoryDialog.weights.1" value="200"/>
+	<item key="HistoryDialog.weights.2" value="200"/>
+	<item key="HistoryTableProvider.HistoryDialog.Revision" value="37"/>
+	<item key="HistoryTableProvider.HistoryDialog.Date" value="92"/>
+	<item key="HistoryTableProvider.HistoryDialog.Author" value="73"/>
+	<item key="HistoryTableProvider.HistoryDialog.Comment" value="182"/>
+	<item key="UpdateDialogWithConflictHandling.location.x" value="698"/>
+	<item key="UpdateDialogWithConflictHandling.location.y" value="36"/>
+	<item key="UpdateDialogWithConflictHandling.size.x" value="525"/>
+	<item key="UpdateDialogWithConflictHandling.size.y" value="727"/>
+	<section name="CommitWizard">
+		<item key="VWeight1" value="500"/>
+		<item key="VWeight2" value="500"/>
+		<item key="ShowCompare" value="false"/>
+	</section>
+</section>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>SupportPage.jsp : 서포트 페이지 추가</CommitComment>
+	<CommitComment>SupportPage.jsp : support페이지 추가
+LoginPage.jsp : 수정사항 없음
+practice.jsp : 연습용 페이지
+LibraryPage.jsp : 라이브러리 수정 사항 없음</CommitComment>
+	<CommitComment>MainPage.jsp : 뉴스 페이지 제작 완료로 인해 메인페이지 링크 업데이트
+HeaderPage.jsp : 헤더 페이지 제작 완료로 인해 헤더 페이지 링크 업데이트</CommitComment>
+	<CommitComment>NewsPage.jsp : 뉴스 페이지 제작 완료</CommitComment>
+	<CommitComment>CommunityReviewPage: 커뮤니티 리뷰 페이지에 게임 타이틀 및 게임 keyart 이미지 추가
+CommunityArtworkPage: 아트웍 게시물 이미지가 헤더를 침범하는 z-index 현상 해결
+CommunityDiscussionPage: 별 수정 없음</CommitComment>
+	<CommitComment>CommunityPage: .sortbtndiv, .sortbtndiv button 각 페이지(review, discussion, artwork)등으로 이동
+
+---------페이지 별 sortbtn 추가---------
+CommunityDiscussionPage.jsp
+CommunityReviewPage.jsp
+CommunityArtworkPage.jsp
+</CommitComment>
+	<CommitComment>MainPage : CommunityPage추가로 CommunityArtworkPage, CommunityDiscussionPaget 제거</CommitComment>
+	<CommitComment>CommunityArtworkPage : 페이지 뷰 작업 완료
+CommunityDiscussionPage : 페이지 뷰 작업 완료
+CommunityPage : 커뮤니티 페이지들을 하나로 묶기 위해 추가
+CommunityReviewPage : 뷰 작업을 위해 페이지 생성</CommitComment>
+	<CommitComment>GameDetailPage 296:button style 제거</CommitComment>
+	<CommitComment>HeaderPage 289: 찜 목록 페이지 추가로 인한 주소 수정</CommitComment>
+</CommitComments>

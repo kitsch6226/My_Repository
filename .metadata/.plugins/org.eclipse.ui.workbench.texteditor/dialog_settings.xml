@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="삭제"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="삭제"/>
+			<item value="textarea"/>
+			<item value="작성"/>
+			<item value="void"/>
+			<item value="id"/>
+			<item value="오구"/>
+			<item value="MyScript"/>
+			<item value="1"/>
+			<item value="visibility=&quot;hidden&quot;;"/>
+			<item value="display=&quot;none&quot;;"/>
+			<item value="display=&quot;block&quot;;"/>
+			<item value="display\"/>
+			<item value="할인중이"/>
+			<item value="할인중"/>
+			<item value="gameInfo"/>
+		</list>
+		<list key="replacehistory">
+			<item value="LibraryVO"/>
+			<item value="Ogu"/>
+			<item value="2"/>
+			<item value="display=&quot;none&quot;;"/>
+			<item value="visibility=&quot;hidden&quot;;"/>
+			<item value="visibility=&quot;visible&quot;;"/>
+			<item value="visibility=&quot;visibility&quot;;"/>
+			<item value="gameInfo3"/>
+			<item value="gameInfo2"/>
+			<item value="ByClassName"/>
+			<item value="button&quot; onclick=&quot;loginAlert()&quot;"/>
+			<item value="button"/>
+			<item value="%"/>
+			<item value=""/>
+			<item value="int discountrate = 100-(int)(((double)gameInfo.getPrice2()/(double)(gameInfo.getPrice1()))*100);"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1578"/>
+		<item key="DIALOG_Y_ORIGIN" value="511"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

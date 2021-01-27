@@ -1,0 +1,319 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.indexcenterdiv {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 128px 0px;
+	display: table;
+}
+
+.indexcenterdiv>h3 {
+	color: #f2f2f2;
+	float: left;
+}
+
+.indexcenterdiv p {
+	width: 100%;
+	color: gray;
+}
+
+.indexcenterdiv a {
+	width: 100%;
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+.subject button {
+	float: right;
+	color: gray;
+	padding: 6px 16px;
+	border: 1px solid #ffdf52;
+	border-radius: 6px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.indexcenterdiv div button:focus {
+	outline: none;
+}
+
+.featureddiv, .specialofferdiv, .communityrecommanddiv, .newgamediv,
+	.freegamediv {
+	background-color: #474747;
+	display: table;
+	overflow: hidden;
+	border-radius: 6px;
+}
+.specialofferdiv a{
+	color:lightgray;
+}
+
+.featureddiv ul {
+	width: 100%;
+}
+
+.featureddiv ul li {
+	list-style: none;
+	display: inline-block;	
+}
+
+.newgamediv div {
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	background-color:#474747;
+}
+.newgamediv h3{
+	padding:10px;
+	color: #f2f2f2;
+}
+.freegamediv{
+	background-color: #474747;
+	margin-top: 20px;
+	width:1522px;
+	height:340px;
+	overflow:auto;
+	display:block;
+}
+.freegamediv ul{
+	width:2020px;
+	height:302px;
+}
+
+.freegamediv li{
+	list-style:none;
+	float:left;
+}
+.freegamediv li img{
+	width:24em;
+	float:left;
+}
+
+.subject {
+	width: 100%;
+	margin-top: 20px;
+	display: table;
+}
+
+.subject h3 {
+	color: #f2f2f2;
+	float: left;
+}
+
+.specialoffertitle {
+	overflow: hidden;
+	padding: 10px;
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+.specialoffertitle img {
+	width: 100%;
+	border-radius: 6px;
+}
+</style>
+</head>
+<body style="background-color: #1f1f1f;">
+	<div class="indexcenterdiv">
+		<div class="featureddiv">
+			<div style="width: 60%; height: 515px; overflow: hidden; float: left">
+				<ul>
+					<li><img
+						src="/store/image/keyart/Cyber Punk_Key_Art_Portrait_976x549.png"
+						style="cursor:pointer; width: 100%" onclick="location.href='http://localhost:8080/store/main/MainPage.jsp?kind=gamedetail'"/></li>
+					<li><img
+						src="/store/image/keyart/EGS_FootballManager2021_SportsInteractive_S1-2560x1440.jpg"
+						style="cursor:pointer; width: 100%" onclick="location.href='http://localhost:8080/store/main/MainPage.jsp?kind=gamedetail'"/></li>
+					<li><img src="/store/image/keyart/AC keyart.jpg"
+						style="width: 100%" /></li>
+					<li><img src="/store/image/keyart/Carto keyart.png"
+						style="width: 100%" /></li>
+				</ul>
+			</div>
+			<div style="float: left; width: 40%; height: 32em;">
+				<div style="height:20em; padding: 20px;">
+					<h2 style="color:#f2f2f2;">게임 제목</h2>
+					<hr style="margin: 10px auto;">
+					<p>게임 간략 설명게임 간략 설명게임 간략 설명게임 간략 설명게임 간략 설명게임 간략 설명게임 간략 설명</p>
+				</div>
+				<div style="width: 90%; padding: 30px;">
+					<p>
+						<a href="#">▸지금 구매</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 특별 할인 -->
+		<div class="subject">
+			<h3>특별 할인</h3>
+			<button>더 보기</button>
+		</div>
+		<div class="specialofferdiv"
+			style="background-color: transparent; margin-top: 20px;">
+			<div class="specialoffertitle">
+				<img
+					src="/store/image/portrait/GR_Portrait_Offer_1200x1600-1200x1600.jpg" />
+				<div
+					style="padding-top: 10px; width: 100%; height: 100px; display: table;">
+					<h2 style="display: block; color: #f2f2f2;">게임 제목</h2>
+					<p style="display: block; margin-top: 10px;">
+						게임 태그: <a href='#'>#태그1</a>, <a href='#'>#태그2</a>, <a href='#'>#태그3</a>,
+						<a href='#'>#태그 4</a>
+					</p>
+				</div>
+				<span style="float: right; color: white;">&nbsp;\60,000</span> <b
+					style="color: #ffea00; float: right;">30%할인율</b>
+			</div>
+			<div class="specialoffertitle">
+				<img
+					src="/store/image/portrait/GR_Portrait_Offer_1200x1600-1200x1600.jpg" />
+			</div>
+			<div class="specialoffertitle">
+				<img
+					src="/store/image/portrait/GR_Portrait_Offer_1200x1600-1200x1600.jpg" />
+			</div>
+			<div class="specialoffertitle">
+				<img
+					src="/store/image/portrait/GR_Portrait_Offer_1200x1600-1200x1600.jpg" />
+			</div>
+
+		</div>
+		<!--커뮤니티 추천  -->
+		<div class="subject">
+			<h3>커뮤니티 추천</h3>
+			<button>더 보기</button>
+		</div>
+		<div class="communityrecommanddiv"
+			style="background-color: #4c6175; margin-top: 20px;">
+			<div style="width: 60%; height: 515px; overflow: hidden; float: left">
+				<ul>
+					<li><img
+						src="/store/image/keyart/Cyber Punk_Key_Art_Portrait_976x549.png"
+						style="width: 100%;" /></li>
+					<li><img
+						src="/store/image/keyart/EGS_FootballManager2021_SportsInteractive_S1-2560x1440.jpg"
+						style="width: 100%" /></li>
+					<li><img src="/store/image/keyart/AC keyart.jpg"
+						style="width: 100%" /></li>
+					<li><img src="/store/image/keyart/Carto keyart.png"
+						style="width: 100%" /></li>
+				</ul>
+			</div>
+			<div style="float: left; width: 40%; height: 32em;">
+				<div style="width: 90%; height: 300px; margin: 20px auto;">
+					<p style="color: white">"이 게임이 가지고 있는 무한한 가능성은 사람을 압도시킨다. 플레이어는
+						어떤 시작점을 고르던 절망적인 상화과 극적인 상황을 오가며 나이트 시티를 100% 즐길 수 있다. 정말 대단한 수작,
+						위쳐에 이어 CD PROJECT가 또 해냈다."</p>
+				</div>
+				<div style="width: 90%; padding: 30px;">
+					<img src="/store/image/profile/nuru.jpg"
+						style="float: left; border: 2px solid black; width: 20%;" />
+					<div>
+						<p style="color: #f2f2f2; padding-top: 4px;">
+							&nbsp;<b>윤느루</b><br>&nbsp;보유 게임: 60개
+						<p>
+						<hr style="margin: 16px 10px;">
+						<p style="color: #f2f2f2;">&nbsp;받은 추천 수 : 1034개</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--새로운 게임!  -->
+		<div class="subject">
+			<h3>새로운 게임</h3>
+			<button>더 보기</button>
+		</div>
+		<div class="newgamediv"
+			style="background-color: yellow; margin-top: 20px;">
+			<div style="padding-right:5px;">
+				<img src="/store/image/keyart/Carto keyart.png" style="width: 100%" />
+				<h3>게임 제목</h3>
+				<hr style="border:1px solid gray;">
+				<p style="display: block; padding: 20px;">게임 태그:
+					<a href='#'>#태그1</a>, <a href='#'>#태그2</a>, <a href='#'>#태그3</a>,
+					<a href='#'>#태그 4</a>
+				</p>
+			</div>
+			<div style="padding-left:5px;">
+				<img src="/store/image/keyart/Carto keyart.png" style="width: 100%" />
+				<h3>게임 제목</h3>
+				<hr style="border:1px solid gray;">
+				<p style="display: block; padding: 20px;">게임 태그:
+					<a href='#'>#태그1</a>, <a href='#'>#태그2</a>, <a href='#'>#태그3</a>,
+					<a href='#'>#태그 4</a>
+				</p>
+			</div>
+		</div>
+		<div class="subject">
+			<h3>무료 게임</h3>
+			<button>더 보기</button>
+		</div>
+		<div class="freegamediv">
+			<ul>
+				<li><div style="padding:10px; display:table;">
+						<img src="/store/image/keyart/EGS_AirborneKingdom_TheWanderingBan_S1-2560x1440.jpg"/>
+					</div>
+					<div style="padding:10px;">
+						<h3 style="color:#f2f2f2;"><a href="#">게임 제목</a></h3>
+						<p style="display: block; color: darkgray;">게임 태그:
+						<a href='#'>#태그1</a>, <a href='#'>#태그2</a>, <a href='#'>#태그3</a>,
+						<a href='#'>#태그 4</a></p>
+					</div>
+				</li>
+				<li><div style="padding:10px; display:table;">
+						<img src="/store/image/keyart/EGS_AirborneKingdom_TheWanderingBan_S1-2560x1440.jpg"/>
+					</div>
+					<div style="padding:10px;">
+						<h3 style="color:#f2f2f2;">게임 제목</h3>
+						<p style="display: block; color: darkgray;">게임 태그:
+						<a href='#'>#태그1</a>, <a href='#'>#태그2</a>, <a href='#'>#태그3</a>,
+						<a href='#'>#태그 4</a></p>
+					</div>
+				</li>
+				<li><div style="padding:10px; display:table;">
+						<img src="/store/image/keyart/EGS_AirborneKingdom_TheWanderingBan_S1-2560x1440.jpg"/>
+					</div>
+					<div style="padding:10px;">
+						<h3 style="color:#f2f2f2;">게임 제목</h3>
+						<p style="display: block; color: darkgray;">게임 태그:
+						<a href='#'>#태그1</a>, <a href='#'>#태그2</a>, <a href='#'>#태그3</a>,
+						<a href='#'>#태그 4</a></p>
+					</div>
+				</li>
+				<li><div style="padding:10px; display:table;">
+						<img src="/store/image/keyart/EGS_AirborneKingdom_TheWanderingBan_S1-2560x1440.jpg"/>
+					</div>
+					<div style="padding:10px;">
+						<h3 style="color:#f2f2f2;">게임 제목</h3>
+						<p style="display: block; color: darkgray;">게임 태그:
+						<a href='#'>#태그1</a>, <a href='#'>#태그2</a>, <a href='#'>#태그3</a>,
+						<a href='#'>#태그 4</a></p>
+					</div>
+				</li>
+				<li><div style="padding:10px; display:table;">
+						<img src="/store/image/keyart/EGS_AirborneKingdom_TheWanderingBan_S1-2560x1440.jpg"/>
+					</div>
+					<div style="padding:10px;">
+						<h3 style="color:#f2f2f2;">게임 제목</h3>
+						<p style="display: block; color: darkgray;">게임 태그:
+						<a href='#'>#태그1</a>, <a href='#'>#태그2</a>, <a href='#'>#태그3</a>,
+						<a href='#'>#태그 4</a></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

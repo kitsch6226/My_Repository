@@ -1,0 +1,304 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+.indexcenterdiv {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 128px 0px;
+	display: table;
+}
+.sortdiv {
+	color: gray;
+}
+.sortdiv a{
+	color: gray;
+}
+.sortdiv a:link{
+	text-decoration: none;
+}
+.simpleinformationdiv, .orderdiv{
+	background:#474747;
+	border-radius:6px;
+	overflow:hidden;
+}
+.simpleinformationrightdiv p{
+	margin: 20px 0;
+	color:lightgray;
+}
+.simpleinformationrightdiv b, .simpleinformationrightdiv a{
+	color: gray;
+}
+.simpleinformationrightdiv a{
+	color:lightgray;
+}
+.simpleinformationrightdiv a:link{
+	text-decoration: none;
+}
+.simpleinformationrightdiv a:hover{
+	color: #ffdf52;
+}
+.orderdiv h2{
+	color:#f2f2f2;
+}
+.orderdiv button{
+	border-radius:6px;
+	border:1px solid black;
+	outline: none;
+	cursor: pointer;
+	padding:14px 24px;
+	float: right;
+}
+.orderbtn{
+	margin-left:10px; background:#ffdd00;
+}
+.orderbtn:hover{
+	background:#ffeb6b;
+}
+.aboutgame{
+	margin-top:20px;
+}
+.systemrequirement, .supportlanguage,.customerreview{
+	padding:20px;
+	margin-top:20px;
+	border-radius:6px;
+	overflow:hidden;
+	border:none;
+	background:#474747;
+	color:lightgray;
+	display:block;
+}
+.systemrequirement div{
+	width:50%;
+	float:left;
+}
+.systemrequirement p{
+	margin-top:30px;
+}
+.systemrequirement p b{
+	color: gray;
+}
+.supportlanguage table{
+	border-collapse:collapse;
+	width: 100%;
+	text-align:center;
+}
+.supportlanguage table td,.supportlanguage table th{
+	padding: 6px;
+	border: 1px solid #f2f2f2;
+}
+.customerreview{
+	padding:0;
+	overflow:hidden;
+}
+.customerreview div, customerreview b{
+	float:left;
+}
+.customerreview input{
+	width:2em;
+	height:2em;
+}
+.customerreviewrightdiv button{
+	width:3em;
+	padding:4px;
+	background:#474747;
+	border:2px solid darkgray;
+	cursor:pointer;
+	border-radius:6px;
+}
+.subject {
+	width: 100%;
+	margin-top: 40px;
+	display: table;
+	color: lightgray;
+}
+.subject h1, .sortdiv h1{
+	padding: 10px 0;
+	color:#f2f2f2;
+}
+.subject a{
+	color:gray;
+}
+.subject a:link{
+	color:gray;
+	text-decoration:none;
+	transition:0.3s;
+}
+.subject a:hover{
+	color:lightgray;
+}
+</style>
+</head>
+<body style="background-color: #1f1f1f;">
+	<div class="indexcenterdiv">
+		<div class="sortdiv">
+			<a href="#">모든 게임</a>&nbsp;>&nbsp;<a href="#">분류 1</a>&nbsp;>&nbsp;<a href="#">사이버 펑크 2022</a>
+			<h1>사이버 펑크 2077</h1>
+		</div>
+		<div class="simpleinformationdiv">
+			<div style="width: 60%; height: 515px; overflow: scroll; float: left">
+				<ul>
+					<li><img
+						src="/store/image/keyart/Cyber Punk_Key_Art_Portrait_976x549.png"
+						style="width: 100%;" /></li>
+					<li><img
+						src="/store/image/keyart/EGS_FootballManager2021_SportsInteractive_S1-2560x1440.jpg"
+						style="width: 100%" /></li>
+					<li><img src="/store/image/keyart/AC keyart.jpg"
+						style="width: 100%" /></li>
+					<li><img src="/store/image/keyart/Carto keyart.png"
+						style="width: 100%" /></li>
+				</ul>
+			</div>
+			<div class="simpleinformationrightdiv" style="float: left; width: 40%; height: 32em;">
+				<div style="height:20em; padding: 20px;">
+					<div style="overflow:hidden; height: 220px; border: 1px solid black;">
+						<img src="/store/image/main/7--cyberpunk2077-the-man-with-the-silver-hand-rgb-1920x1080.jpg" style="width:100%"/>
+					</div>
+					<p><b>게임 평가 : </b><a href="#">꼭 해봐야 함&nbsp;<b>(1,000)</b></a><p>
+					<p><b>출시 날짜 : </b>2020-11-19<p>
+					<p><b>개발사 : </b><a href="#">CD PROJECT RED</a></p>
+					<p><b>웅영 체제 : </b>윈도우, 맥</p>
+					<p><b>태그: </b><a href="#">#태그1</a>, <a href="#">#태그2</a>, <a href="#">#태그3</a>, <a href="#">#태그4</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="orderdiv" style="margin:20px auto; padding:20px;">
+				<h2 style="float:left; padding-top:6px;">사이버 펑크2077 구매하기</h2>
+				<button class="orderbtn" type="button">지금 구매</button>
+				<button class="wishlistbtn" type="button">찜 하기</button>
+		</div>
+		<!-- 게임에 관하여  -->
+		<div class="subject">
+			<h2>게임에 관하여</h2>
+		</div>
+		<div class="aboutgame">
+			<p style="color:#c2c2c2;">
+				나이트 시티가 당신을 바꿔 놓을 것입니다<br>
+				<br>사이버펑크 2077은 힘, 화려함 및 신체 개조에 집착하는 거대 도시인 나이트 시티를 배경으로 하는 오픈 월드 액션 어드벤처 스토리입니다.<br>
+				<br>플레이어는 불멸의 열쇠인 특별한 이식 장치를 쫓는 용병 무법자인 V를 플레이하게 됩니다.<br>
+				캐릭터의 사이버웨어, 스킬세트, 플레이스타일을 지정할 수 있으며, 내가 선택하는 대로 스토리와 주변 세상이 형성되는 광대한 도시를 탐험하게 됩니다.<br>
+				<br>용병 무법자로 플레이하세요<br>
+				사이버네틱으로 능력이 업그레이드된 도시 용병인 사이버펑크가 되어 나이트 시티 거리의 전설이 되세요.<br>
+				<br>미래의 도시에서 살아보세요<br>
+				비주얼, 복잡성 및 깊이의 측면에서 새로운 기준을 제시하는 광활한 오픈 월드인 나이트 시티의 세계로 오세요.<br>
+				<br>영생을 얻게 해주는 이식 장치를 훔치세요<br>
+				인생에서 가장 위험한 일을 맡아 불멸의 열쇠인 시제품 이식 장치를 찾으세요.<br>
+			</p>		
+		</div>
+		<div class="subject">
+			<h2>시스템 요구 사항</h2>
+		</div>
+		<div class="systemrequirement">
+			<div>
+				<h2>최소 사양</h2>
+				<hr style="margin-top:20px;">
+				<p><b>OS : </b>Windows 7</p>
+				<p><b>Processor : </b>Intel Core i5-3570K 또는 AMD FX-8310</p>
+				<p><b>Memory : </b>8GB RAM</p>
+				<p><b>Graphic : </b>NVIDIA GeForce GTX 780 또는 AMD Radeon RX 470</p>
+				<p><b>Storage : </b>70GB(SSD 권장)</p>
+			</div>
+			<div>
+				<h2>권장 사양</h2>
+				<hr style="margin-top:20px;">
+				<p><b>OS : </b>Windows 10</p>
+				<p><b>Processor : </b>Intel Core i7-4790 또는 AMD Ryzen 3 3200G</p>
+				<p><b>Memory : </b>12GB RAM</p>
+				<p><b>Graphic : </b>NVIDIA GeForce GTX 1060 또는 AMD Radeon R9 Fury</p>
+				<p><b>Storage : </b></p>
+			</div>
+		</div>
+		<!--지원 언어 -->
+		<div class="subject">
+			<h2>지원 언어</h2>
+		</div>
+		<div class="supportlanguage">
+			<table>
+				<tr>
+					<th style="width:15%;">Language</th>
+					<th style="width:25%;">Voice</th>
+					<th style="width:25%;">UI</th>
+					<th style="width:25%;">Subtitle</th>
+				</tr>
+				<tr>
+					<td>KR</td>
+					<td>O</td>
+					<td>O</td>
+					<td>O</td>
+				</tr>
+				<tr>
+					<td>EN</td>
+					<td>O</td>
+					<td>O</td>
+					<td>O</td>
+				</tr>
+			</table>
+		</div>
+		<div class="subject">
+			<h2>고객 리뷰</h2>
+		</div>
+		<div class="customerreview">
+			<div style="width:60%;">
+				<div style="padding:20px;">
+					<p>종합 평가</p>
+					<p style="margin-top:20px;"><b style="font-size:2em;">꼭 해봐야 함!</b>&nbsp;&nbsp;(총 1032개의 평가)</p>
+				</div>
+			</div>
+			<div style="width:40%; height:124px; background:#525252;">
+				<div style="padding:20px;">
+					<p>평가 유형</p>
+					<p style="margin-top:20px;">
+						<input name="reviewcheck" type="radio" value="rate1" checked="checked"/><b style="font-size:2em; margin-left:20px; ">긍정적</b>
+						<input name="reviewcheck" type="radio" value="rate2" style="margin-left:20px;"/><b style="font-size:2em; margin-left:20px;">부정적</b>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="customerreview">
+			<div class="customerreviewleftdiv" style=" width:30%;float:left;">
+				<div style="padding:20px;">
+					<img src="/store/image/profile/nuru.jpg" style="width:100px; border:1px solid black; float:left" ondragstart="return false;"/>
+					<div style="margin-left:20px;">
+						<h2>윤느루</h2>
+						<p style="margin-top:20px;">보유 게임 : 1024개</p>
+					</div>
+				</div>
+			</div>
+			<div class="customerreviewrightdiv" style="width:70%; background:#525252">
+				<div style="padding:20px;">
+					<div>
+						<img src="/store/image/icon/rate_good.png" style="float:left"/>
+						<b style="float:left; font-size:2em; margin-top:10px;">&nbsp;추천 합니다.</b>
+					</div>
+					<div style="width:100%; margin:20px 0;">
+						<hr>
+					</div>
+					<div style="float:left;">
+						<p>"갓겜 스토리 브금 모든게완벽 난이도는 다크소울이랑 블러드본보다 어려웠음 암튼 갓겜 스팀에 후기처음남김 암튼 갓겜
+						 - 초보자는 공략보는거 추천함 - 어려운건 맞는데 죽다보면 컨트롤이 강해짐 진짜 이게임하고 다른게임 실력도 늘음. ..."
+						 </p>
+					</div>
+					<div style="width:100%;  margin:20px 0;">
+						<hr>
+					</div>
+					<div style="float:left;">
+						<button><img src="/store/image/icon/rate_good.png" style="background:transparent;width:100%"/></button>
+						<button style="margin-left:20px;"><img src="/store/image/icon/rate_bad.png" style="background:transparent; width:100%"/></button>
+						<b style="margin-left:20px;">120명이 좋아요를 눌렀어요.</b>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

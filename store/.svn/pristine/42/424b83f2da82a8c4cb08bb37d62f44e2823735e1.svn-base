@@ -1,0 +1,127 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+.indexcenterdiv {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 128px 0px;
+	display: table;
+}
+.sortbtndiv{
+	margin-left:20px;
+	float:left;
+}
+.sortlist{
+	float:left;
+	padding:10px;
+	width:6%;
+	border-radius:6px;
+	background:#474747;
+	display:none;
+	position:absolute;
+	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.7);
+}
+.sortlist li{
+	color:gray;
+	padding:10px 0px;
+	text-align:center;
+	list-style:none;
+}
+.sortbtn{
+	width:100%;
+	height:3.2em;
+	color:lightgray;
+	padding:10px 20px;
+	border:1px solid #ffea00;
+	border-radius:6px;
+	background:transparent;
+	outline:none;
+}
+.sortbtndiv:hover .sortlist{
+	display:block;
+}
+.sortbtn:hover{
+	background:#ffea00;
+	color:black;
+}
+.indexcenterdiv a{
+	color: #c2c2c2;
+	text-decoration:none;
+}
+.indexcenterdiv li:hover a{
+	color:white;
+}
+.newsdiv{
+	background:#474747;
+	margin-top:20px;
+	padding:20px;
+	border-radius:6px;
+	overflow:hidden;
+}
+.newsdiv p{
+	 color:lightgray;
+}
+.newsdiv1{
+	width:100%;
+	box-sizing:border-box;
+	display:table;
+}
+
+</style>
+</head>
+<body style="background-color: #1f1f1f;">
+	<div class="indexcenterdiv">
+		<div style="display:table; width:100%; padding-bottom:20px">
+			<h1 style="float:left; color:lightgray">뉴스</h1>
+			<div class="sortbtndiv">
+				<input class="sortbtn" type="button" value="정렬 기준 : 설치여부"/>
+				<div class="sortlist">
+					<ul>
+						<li><a href="#">최근</a></li>
+						<li><a href="#">게임 업데이트</a></li>
+						<li><a href="#">게임 런칭</a></li>
+						<li><a href="#">오구 소식</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="newsdiv">
+			<div class="newsdiv1">
+				<div style="width:10%; float:left;">
+					<img src="/store/image/keyart/Cyber Punk_Key_Art_Portrait_976x549.png" style="width:100%"/>
+				</div>
+				<h2 style="width:80%;float:left; color:lightgray; margin-left:20px;">사이버 펑크 2077이 새롭게 업데이트 되었습니다!</h2>
+				<p style="width:8%; float:right;"><b style="float:right">2020-11-08</b></p>
+				<p style="float:left; padding-top:30px; padding-left:20px;">사이버 펑크 2077</p>
+			</div>
+			<hr style="margin:20px auto;">
+			<div>
+				<p>
+					Lace up those gloves and pick up some skull-crackin' deals on the best fighting games on Steam,<br>
+					on now until November 16th at 10am Pacific! From 2D and 3D Fighters to Party Brawlers and Beat ‘em ups,<br>
+					the Fighting Game Sale comes in like a spinning piledriver with discounts on games like:<br>
+					TEKKEN 7th Street Fighter VS Mortal Kombat<br><br>
+					11Injustice<br>
+					2GUILTY GEAR xrd -REVELATOR-Streets of Rage<br>
+					4Castle CrashersSOULCALIBUR VI<br>
+					THE KING OF FIGHTERS XIV STEAM<br>
+					EDITIONSlap CityBlazBlue <br>
+					Centralfiction...and so much more!So what are you waiting for,<br>
+					Fighting Game Fans? Dropkick on in here:https://store.steampowered.com/sale/FightingGameSale
+				</p>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
